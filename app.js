@@ -11,7 +11,7 @@ function startSurprize() {
     `Și acum o să mă întrebați de ce vă povestesc toate astea 🤷‍♀️?`,
   ];
 
-  const fullText = `Pentru că sunteți genul de oameni care aduc pizza la petreceri, nașii perfecți și încă știu să zică Da cu stil.`;
+  const fullText = `Pentru că sunteți genul de oameni care aduc pizza la petreceri, nașii perfecți și încă știți să zică Da cu stil.`;
 
   let paragraphIndex = 0;
   let charIndex = 0;
