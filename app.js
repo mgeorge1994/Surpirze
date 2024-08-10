@@ -1,7 +1,7 @@
 function startSurprize() {
   const textArray = [
     "Salut! Eu sunt George, prietenul vostru nebun preferat.",
-    "Știi că întotdeauna am fost un magnet pentru aventuri ciudate. Ei bine, ultima mea ispravă implică o mașină și... o cerere în căsătorie!",
+    "Știți că întotdeauna am fost un magnet pentru aventuri ciudate. Ei bine, ultima mea ispravă implică o mașină și... o cerere în căsătorie!",
     `Totul a început când, într-o seară frumoasă de duminică, am “reușit” să fac un mic accident de mașină. Nimeni nu a fost rănit, doar mașina a cam suferit.`,
     `Și cum stăteam cu Andreea acolo, privind la stele și așteptând remorcarea, m-am gândit  să transform această amintire neplăcută într-una memorabilă. Așadar, printre cioburi și agitație, am scos inelul de logodnă din sacou și, punându-mă în genunchi, am spus:`,
     `Țuș, vrei să fii soția mea?`,
