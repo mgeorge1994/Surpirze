@@ -4,14 +4,14 @@ function startSurprize() {
     "Și am o poveste pe care trebuie s-o împărtășesc cu voi.",
     "Știi că întotdeauna am fost un magnet pentru aventuri ciudate. Ei bine, ultima mea ispravă implică o mașină și... o cerere în căsătorie!",
     `Totul a început când, într-o seară frumoasă de duminică, am “reușit” să fac un mic accident de mașină. Nimeni nu a fost rănit, doar mașina a cam suferit.`,
-    `Și cum stăteam cu Andreea acolo, privind la stele și așteptând remorcarea, m-am gândit că să transform această amintire neplăcută într-una memorabilă. Așadar, printre cioburi și agitație, am scos inelul de logodnă din sacou și, punându-mă în genunchi, am spus:`,
+    `Și cum stăteam cu Andreea acolo, privind la stele și așteptând remorcarea, m-am gândit  să transform această amintire neplăcută într-una memorabilă. Așadar, printre cioburi și agitație, am scos inelul de logodnă din sacou și, punându-mă în genunchi, am spus:`,
     `Țuș, vrei să fii soția mea?`,
     `Și ghici ce?`,
     `A spus „DA”.`,
     `Și acum o să mă întrebați de ce vă povestesc toate astea 🤷‍♀️?`,
   ];
 
-  const fullText = `Pentru că sunteți mișto destul cât să ne fiți nașii de cununie și crazy destul ca să ziceți Da.`;
+  const fullText = `Pentru că sunteți genul de oameni care aduc pizza la petreceri, nașii perfecți și încă știu să zică Da cu stil.`;
 
   let paragraphIndex = 0;
   let charIndex = 0;
@@ -215,32 +215,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function trickAccept() {
-  // Selectează butonul cu id-ul 'declineButton' și modifică stilurile și textul
   var declineButton = document.getElementById("decline-btn");
 
-  if (declineButton) {
-    declineButton.style.background = "#7f00ff";
-    declineButton.textContent = "Vrem";
-  }
+  declineButton.style.background = "#7f00ff";
+  declineButton.textContent = "Vrem";
 
   var acceptButton = document.getElementById("accept-btn");
-  if (acceptButton) {
-    acceptButton.style.backgroundColor = "red"; // Schimbă culoarea de fundal în roșu
-    acceptButton.textContent = "Nu Vrem"; // Schimbă textul butonului în "Nu Vrem"
 
-    acceptButton.style.opacity = "1";
-    acceptButton.style.transition = "opacity 10s ease-in-out";
+  acceptButton.style.backgroundColor = "red";
+  acceptButton.textContent = "Nu Vrem";
 
-    setTimeout(() => {
-      acceptButton.style.opacity = "0";
-      // Optionally hide the button from layout after fade out
-      setTimeout(() => (acceptButton.style.display = "none"), 10000); // Adjust timing if needed
-    }, 0); // You can delay the start of the fade effect by changing 0 to another value (in milliseconds)
-  }
+  accept();
+}
+function AceptButtonClick() {
+  var declineButton = document.getElementById("accept-btn");
+
+  declineButton.style.background = "#7f00ff";
+  declineButton.textContent = "Vrem";
+
+  var acceptButton = document.getElementById("decline-btn");
+
+  acceptButton.style.backgroundColor = "red";
+  acceptButton.textContent = "Nu Vrem";
   accept();
 }
 function accept() {
-  document.getElementById("decline-btn").style.display = "none";
+  document.getElementById("accept-btn").style.animation = "none";
   const imageLeftElement = document.querySelector(".image-left");
   imageLeftElement.classList.add("fade-in");
   // Check if the animation is already running
