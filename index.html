@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabana cu vin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wine-body">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+          <p>Cabana cu vin</p>
+        </div>
+        <ul class="nav-links">
+          <li>Acasă</li>
+          <li id="scrollToAbout">Despre</li>
+          <li id="scrollToProducts">Produse</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="hero-content">
+          <img src="./images/cover.jpeg" alt="" />
+          <div class="text">
+            <h1>Cabana cu Vin.</h1>
+            <p>Răsfață-ți simțurile, trăiește experiența vinului desăvârșit</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>Despre noi</h2>
+        <p>
+          La Crama Mirceși, suntem dedicați să transformăm experiența vinului în
+          Republica Moldova, combinând pasiunea pentru vinuri de calitate cu
+          expertiza acumulată în peste 20 de ani de activitate în domeniu și
+          afaceri. Într-o piață unde calitatea și accesibilitatea adesea nu se
+          întâlnesc, am decis să spargem tiparele. Lansând Cabana cu Vin, ne
+          propunem să aducem vinuri excelente și la prețuri accesibile, direct
+          la ușa ta. De la strugurii selectați cu grijă până la selecția
+          diversificată, fiecare sticlă reflectă dedicarea noastră pentru vinuri
+          de top. Cu o experiență vastă în selecția, distribuția și aprecierea
+          vinurilor, ne asigurăm că fiecare produs pe care îl oferim este testat
+          riguros și ales pentru a satisface cele mai exigente gusturi. În
+          Cabana cu Vin, ne străduim să combinăm rafinamentul cu
+          accesibilitatea, oferindu-ți vinuri care nu doar că încântă papilele
+          gustative, dar sunt și prietenoase cu bugetul. Descoperă și bucură-te
+          de o experiență vinicolă deosebită cu Cabana cu Vin, unde tradiția și
+          inovația se întâlnesc pentru a crea momente memorabile. Fiecare pahar
+          pe care îl servești de la noi este rezultatul a două decenii de
+          expertiză și pasiune pentru vin, oferind nu doar un produs, ci o
+          adevărată experiență de neuitat.
+        </p>
+      </section>
+
+      <section class="products">
+        <h2>Răsfoiește printre cele mai căutate</h2>
+        <div class="grid-container" id="product-grid">
+          <!-- Produsele vor fi generate aici din JavaScript -->
+        </div>
+      </section>
+
+      <script src="scripts.js"></script>
+    </div>
+
+    <div class="surprise hidden">
+      <div class="curtain curtain-left">
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+      </div>
+      <div class="curtain curtain-right">
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+        <div class="curtain-element"></div>
+      </div>
+
+      <div class="content">
+        <div id="dynamic-text"></div>
+        <div id="final-question"></div>
+        <div id="details-button">
+          <button class="details" onclick="showTerms()">
+            Vreau sa stiu mai multe
+          </button>
+        </div>
+        <div id="terms">
+          <h2>Termeni și Condiții</h2>
+          <ul>
+            <li>Trebuie să ne vedem de macar 3-5 ori pe an.</li>
+            <li>Trebuie să ne dăm mesaje de Paști și de Crăciun.</li>
+            <li>
+              Trebuie să ne primiți cu colinda pe noi/pruncul nostru ce va veni
+              la un moment dat, până când acesta micu face 8 ani.
+            </li>
+            <li>
+              În caz că ne întâlnim întâmplător, să ne facem poze și să le
+              trimitem.
+            </li>
+            <li>Trebuie să ne trimitem meme-uri amuzante din când în când.</li>
+            <li>
+              La fiecare aniversare importantă, să ne trimitem mesaje cu urări.
+            </li>
+            <li>Trebuie să venim cu cadouri surpriză de Crăciun.</li>
+            <li>
+              Să organizăm un mic eveniment împreună cel puțin o dată pe an.
+            </li>
+            <li>Trebuie să ne povestim cele mai amuzante întâmplări.</li>
+            <li>
+              În cazul unei invitații la o petrecere, să ne facem timp să
+              participăm.
+            </li>
+            <li>
+              Trebuie să ne sfătuim unul pe altul în caz de dileme existențiale.
+            </li>
+            <li>La fiecare 2 ani, să ne întâlnim pentru o masă festivă.</li>
+            <li>Trebuie să ne învățăm unul pe altul noi rețete de gătit.</li>
+            <li>Să ne vizităm reciproc în vacanțe, dacă se poate.</li>
+            <li>Trebuie să ne ajutăm cu sfaturi de călătorie.</li>
+            <li>
+              Trebuie să ne răsplătim reciproc cu câte un mic cadou la reușite
+              importante.
+            </li>
+            <li>Trebuie să ne împărtășim planurile mari de viitor.</li>
+            <li>
+              Trebuie să ne ținem unul pe altul la curent cu evenimente
+              importante din viețile noastre.
+            </li>
+            <li>În caz de criză, să ne oferim sprijinul necondiționat.</li>
+            <li>
+              Trebuie să ne facem timp pentru câteva apeluri video regulat.
+            </li>
+          </ul>
+          <div class="terms-buttons">
+            <button id="accept-btn" onclick="accept()">Vrem!</button>
+            <button id="decline-btn" onclick="trickAccept()">Nu vrem!</button>
+          </div>
+        </div>
+        <div class="image-container image-left">
+          <div id="picture">
+            <img src="./images/img 1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="image-container image-right">
+          <div id="picture">
+            <img src="./images/img 2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0"></script>
+</html>
