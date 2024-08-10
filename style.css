@@ -160,7 +160,6 @@
   text-align: center;
   margin-top: 10rem;
   padding-top: 20px;
-  overflow: hidden;
   text-align: justify;
   min-height: 100% !important;
 }
@@ -225,7 +224,7 @@
 }
 
 #dynamic-text {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1.5;
   margin: 0 auto;
   max-width: 600px;
@@ -234,7 +233,7 @@
 #final-question {
   display: none;
   margin-top: 20px;
-  font-size: 100px;
+  font-size: 120px;
 }
 #accept-button {
   display: none;
@@ -260,13 +259,14 @@
 #terms ul {
   list-style-type: disc;
   margin-left: 20px;
+  margin-top: 2rem;
 }
 .terms-buttons {
   text-align: center;
   margin-top: 20px;
   position: relative;
   padding: 2rem;
-  min-height: 40px;
+  height: 7rem;
 }
 
 .terms-buttons button {
@@ -278,15 +278,12 @@
   border-radius: 5px;
   color: white;
   cursor: pointer;
-  position: absolute; /* Poziționare absolută pentru animație */
-  transition: transform 0.3s, background-color 0.3s, opacity 0.3s; /* Tranziție lină pentru animație și culoare */
-  z-index: 50000;
-  height: 8rem;
-  background-color: aquamarine;
+  position: absolute;
+  transition: transform 0.3s, background-color 0.3s, opacity 0.3s;
 }
 
 #accept-btn {
-  background-color: #7f00ff; /* Mov */
+  background-color: #7f00ff;
   top: 0; /* Poziționat sus */
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -296,6 +293,7 @@
   background-color: #ff4d4d; /* Roșu */
   bottom: 0; /* Poziționat jos */
   height: 40px;
+  z-index: 50000;
 }
 
 #accept-btn:hover {
@@ -337,7 +335,6 @@
   display: flex;
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 .image-container {
